@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(home: Home()));
+void main() => runApp(MaterialApp(
+      home: Home(),
+    ));
 
 class Home extends StatefulWidget {
   @override
@@ -22,29 +24,30 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text("WhatsApp"),
         centerTitle: false,
-        backgroundColor: Colors.teal[800],
+        backgroundColor: Color.fromRGBO(7, 94, 84, 1),
         elevation: 0.0,
       ),
-      backgroundColor: Colors.grey[100],
+      backgroundColor: Color.fromRGBO(236, 229, 221, 1),
       // body: Container(
       //   child: Center(child: Image.asset("assets/background.png")),
       // ),
-      body: Container(
-          padding: EdgeInsets.all(40.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: quotes.map((quote) => Text(quote)).toList(),
-          )),
+      body: SafeArea(
+          child: Container(
+              padding: EdgeInsets.all(40.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: quotes.map((quote) => Text(quote)).toList(),
+              ))),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+        child: Icon(Icons.message),
         tooltip: "Send",
         onPressed: () {
           setState(() {
             counter += 1;
           });
         },
-        backgroundColor: Colors.teal[800],
+        backgroundColor: Color.fromRGBO(37, 211, 102, 1),
       ),
     );
   }
