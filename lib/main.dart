@@ -22,6 +22,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       body: DefaultTabController(
         length: 4,
+        initialIndex: 1,
         child: NestedScrollView(
           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
             return <Widget>[
@@ -29,8 +30,9 @@ class _HomeState extends State<Home> {
                 centerTitle: false,
                 backgroundColor: Color.fromRGBO(7, 94, 84, 1),
                 title: Text("WhatsApp"),
-                floating: false,
-                // pinned: true,
+                floating: true,
+                snap: true,
+                elevation: 0,
                 actions: [
                   IconButton(
                     icon: Icon(Icons.search),
@@ -67,7 +69,41 @@ class _HomeState extends State<Home> {
           body: TabBarView(
             children: [
               Icon(Icons.camera_alt),
-              Icon(Icons.chat),
+              CustomScrollView(
+                slivers: <Widget>[
+                  SliverFixedExtentList(
+                    itemExtent: 150.0,
+                    delegate: SliverChildListDelegate(
+                      [
+                        Container(color: Colors.amber),
+                        Container(color: Colors.purple),
+                        Container(color: Colors.green),
+                        Container(color: Colors.orange),
+                        Container(color: Colors.yellow),
+                        Container(color: Colors.pink),
+                        Container(color: Colors.amber),
+                        Container(color: Colors.purple),
+                        Container(color: Colors.green),
+                        Container(color: Colors.orange),
+                        Container(color: Colors.yellow),
+                        Container(color: Colors.pink),
+                        Container(color: Colors.amber),
+                        Container(color: Colors.purple),
+                        Container(color: Colors.green),
+                        Container(color: Colors.orange),
+                        Container(color: Colors.yellow),
+                        Container(color: Colors.pink),
+                        Container(color: Colors.amber),
+                        Container(color: Colors.purple),
+                        Container(color: Colors.green),
+                        Container(color: Colors.orange),
+                        Container(color: Colors.yellow),
+                        Container(color: Colors.pink),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
               Icon(Icons.notifications),
               Icon(Icons.call),
             ],
