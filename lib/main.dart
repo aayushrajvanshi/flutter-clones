@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/screens/home_screen.dart';
+import 'package:whatsapp_clone/screens/home.dart';
 
 void main() {
   runApp(
@@ -7,7 +7,7 @@ void main() {
       title: 'WhatsApp Clone',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
-      home: HomeScreen(),
+      home: Home(),
     ),
   );
 }
