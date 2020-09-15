@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/screens/home.dart';
+import 'package:whatsapp_clone/screens/screens.dart';
 
 void main() {
   runApp(
     MaterialApp(
-      title: 'WhatsApp Clone',
+      title: 'Flutter App Clones',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
-      home: Home(),
+      home: FacebookScreen(),
     ),
   );
 }
