@@ -7,7 +7,7 @@ void main() {
       title: 'Flutter App Clones',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
-      home: FacebookScreen(),
+      home: WhatsApp(),
     ),
   );
 }

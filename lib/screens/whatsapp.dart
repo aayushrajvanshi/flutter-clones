@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
+class WhatsApp extends StatefulWidget {
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _WhatsAppState createState() => _WhatsAppState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _WhatsAppState extends State<WhatsApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,9 +16,10 @@ class _HomeScreenState extends State<HomeScreen> {
           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
             return <Widget>[
               SliverAppBar(
-                centerTitle: false,
                 backgroundColor: Color.fromRGBO(7, 94, 84, 1),
+                centerTitle: false,
                 title: Text("WhatsApp"),
+                pinned: true,
                 floating: true,
                 snap: true,
                 elevation: 0,
@@ -36,21 +37,17 @@ class _HomeScreenState extends State<HomeScreen> {
                     splashRadius: 24,
                   ),
                 ],
-              ),
-              SliverPersistentHeader(
-                pinned: true,
-                delegate: _SliverAppBarDelegate(
-                  TabBar(
-                    tabs: [
-                      Tab(
-                        icon: Icon(Icons.camera_alt),
-                      ),
-                      Tab(text: "CHATS"),
-                      Tab(text: "STATUS"),
-                      Tab(text: "CALLS"),
-                    ],
-                    indicatorColor: Colors.white,
-                  ),
+                bottom: TabBar(
+                  tabs: [
+                    Tab(
+                      icon: Icon(Icons.camera_alt),
+                    ),
+                    Tab(text: "CHATS"),
+                    Tab(text: "STATUS"),
+                    Tab(text: "CALLS"),
+                  ],
+                  indicatorColor: Colors.white,
+                  indicatorWeight: 4.0,
                 ),
               ),
             ];
@@ -100,30 +97,5 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
     );
-  }
-}
-
-class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
-  _SliverAppBarDelegate(this._tabBar);
-
-  final TabBar _tabBar;
-
-  @override
-  double get minExtent => _tabBar.preferredSize.height;
-  @override
-  double get maxExtent => _tabBar.preferredSize.height;
-
-  @override
-  Widget build(
-      BuildContext context, double shrinkOffset, bool overlapsContent) {
-    return Container(
-      color: Color.fromRGBO(7, 94, 84, 1),
-      child: _tabBar,
-    );
-  }
-
-  @override
-  bool shouldRebuild(_SliverAppBarDelegate oldDelegate) {
-    return false;
   }
 }
