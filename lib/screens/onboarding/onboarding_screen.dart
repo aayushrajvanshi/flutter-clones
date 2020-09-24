@@ -4,8 +4,12 @@ class OnboardingScreen extends StatelessWidget {
   static String routeName = "/onboarding";
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text("Hello"),
+    return Scaffold(
+      body: SafeArea(
+        child: Container(
+          child: Text("Hello"),
+        ),
+      ),
     );
   }
 }
