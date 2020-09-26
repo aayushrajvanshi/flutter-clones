@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'app.dart';
+import 'package:whatsapp_clone/app.dart';
 
 void main() {
   runApp(App());
