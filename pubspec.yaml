@@ -28,6 +28,7 @@ dependencies:
   camera:
   path_provider:
   path:
+  flutter_signature_pad:
 
 dev_dependencies:
   flutter_test:
