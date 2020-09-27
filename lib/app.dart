@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/routes.dart';
-// import 'package:whatsapp_clone/screens/onboarding/onboarding_screen.dart';
-import 'package:whatsapp_clone/screens/signature_pad/signature_pad_screen.dart';
+import 'package:flutter_clone/routes.dart';
+// import 'package:flutter_clone/screens/onboarding/onboarding_screen.dart';
+import 'package:flutter_clone/screens/signature_pad/signature_pad_screen.dart';
 
 class App extends StatelessWidget {
   @override

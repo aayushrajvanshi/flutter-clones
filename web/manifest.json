@@ -1,6 +1,6 @@
 {
-    "name": "whatsapp_clone",
-    "short_name": "whatsapp_clone",
+    "name": "flutter_clone",
+    "short_name": "flutter_clone",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
