@@ -1,5 +1,5 @@
 name: flutter_clone
-description: A new Flutter project.
+description: Flutter Clones of popular apps.
 publish_to: "none"
 version: 1.0.0+1
 
@@ -9,7 +9,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^0.1.3
   google_fonts: ^1.1.0
   path_provider:
   path:
