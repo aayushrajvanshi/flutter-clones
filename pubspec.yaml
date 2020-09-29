@@ -14,6 +14,7 @@ dependencies:
   path:
   flutter_signature_pad:
   flutter_launcher_icons:
+  provider: ^4.3.2+2
 
 dev_dependencies:
   flutter_test:
@@ -34,7 +35,7 @@ flutter:
     - family: Gilroy
       fonts:
         - asset: assets/fonts/Gilroy-Regular.ttf
-        - asset: assets/fonts/Gilroy-Italic.ttf
+        - asset: assets/fonts/Gilroy-RegularItalic.ttf
           style: italic
         - asset: assets/fonts/Gilroy-Bold.ttf
           weight: 700

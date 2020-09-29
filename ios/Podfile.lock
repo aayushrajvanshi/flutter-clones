@@ -1,6 +1,4 @@
 PODS:
-  - camera (0.0.1):
-    - Flutter
   - Flutter (1.0.0)
   - path_provider (0.0.1):
     - Flutter
@@ -8,14 +6,11 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
-  - camera (from `.symlinks/plugins/camera/ios`)
   - Flutter (from `Flutter`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
   - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
 
 EXTERNAL SOURCES:
-  camera:
-    :path: ".symlinks/plugins/camera/ios"
   Flutter:
     :path: Flutter
   path_provider:
@@ -24,7 +19,6 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/url_launcher/ios"
 
 SPEC CHECKSUMS:
-  camera: a0ca5080336f7af47b88436e5e26da3dee5568f0
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
   url_launcher: 6fef411d543ceb26efce54b05a0a40bfd74cbbef
