@@ -15,6 +15,7 @@ dependencies:
   flutter_signature_pad:
   flutter_launcher_icons:
   provider: ^4.3.2+2
+  splashscreen:
 
 dev_dependencies:
   flutter_test:
